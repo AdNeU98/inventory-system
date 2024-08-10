@@ -1,0 +1,17 @@
+/* AddProduct.css */
+/* Ensure the card where the form is placed stands out against the background */
+.card {
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+  border-radius: 8px; /* Rounded corners */
+}
+
+/* Buttons in forms can have consistent styles as well */
+.card .btn-success {
+  background-color: #4ECCA3; /* Mint green background */
+  border: none; /* Remove default border */
+}
+
+/* Additional styling for when buttons are disabled or in loading state */
+.card .btn-success:disabled {
+  background-color: #cccccc; /* Grey out the button when disabled */
+}

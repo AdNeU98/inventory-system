@@ -1,0 +1,38 @@
+/* ManageProduct.css */
+
+/* Adjust the title to make it more prominent */
+.container-main .header-row h3 {
+  color: #ffffff; /* White color for contrast */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow for better readability */
+  font-size: 2rem; /* Larger font size */
+}
+
+/* Enhance the appearance of the table */
+#customers {
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+  border-radius: 8px; /* Rounded corners */
+  overflow: hidden; /* Ensures the child elements adhere to the border radius */
+}
+
+/* Style for table headers */
+#customers thead th {
+  background-color: #DC3444; /* Background color for headers */
+  color: #fff;
+  width: 10%/* White color for header text */
+}
+
+.customer-header{
+  width: 20%
+}
+
+/* Style for table rows and data */
+#customers tbody tr td {
+  background-color: #f9f9f9; /* Light background for table data */
+}
+
+/* Style for edit and delete buttons */
+#customers tbody tr td .btn-secondary,
+#customers tbody tr td .btn-danger {
+  margin-right: 8px; /* Space between buttons */
+}
+

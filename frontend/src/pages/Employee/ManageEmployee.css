@@ -1,0 +1,123 @@
+/* add-employee.css */
+
+.container-main {
+    margin-top: 20px;
+  }
+  
+  .center-align {
+    text-align: center;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+    margin-top: 15px;
+    display: block; /* Make the button a block-level element */
+    margin-left: auto; /* Center-align the button horizontally */
+    margin-right: auto;
+  }
+  
+  .btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+  }
+
+  
+body {
+  background-color:beige;
+}
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td,
+#customers th {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+#customers tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+  background-color: #ddd;
+}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: green;
+  color: white;
+}
+
+.container-main {
+  /* ... (existing styles) */
+}
+
+.add-product-button {
+  /* Add styling for the "Add New Product" button */
+  background-color: #28a745;
+  border-color: #218838;
+  font-weight: bold;
+}
+
+.add-product-button:hover {
+  /* Add hover effect for the button */
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+
+.add-product-button {
+  /* Add styling for the "Add New Product" button */
+  background-color: #28a745;
+  border-color: #218838;
+  font-weight: bold;
+}
+
+.add-product-button:hover {
+  /* Add hover effect for the button */
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+.header-row {
+  margin-bottom: 20px; /* Add some spacing between the button and the heading */
+}
+
+.add-product-col {
+  text-align: right; /* Align the button to the right within its column */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.add-product-button {
+  /* Add styling for the "Add New Product" button */
+  background-color: #dc3545;
+  border-color: #dc3545;
+  font-weight: bold;
+}
+
+.add-product-button:hover {
+  /* Add hover effect for the button */
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+  
