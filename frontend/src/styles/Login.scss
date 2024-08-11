@@ -1,8 +1,8 @@
 .login-bg {
   width: 100%;
   height: 100vh;
-  background-color: #cae0ff; /* Light blue background color */
-  background-image: url(../assets/login.jpeg);
+  background-color: #f8e2c1; /* Light blue background color */
+  // background-image: url(../assets/login.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; /* Ensures the background image is centered */
@@ -16,7 +16,12 @@
   width: 80%; /* Suggested to use a percentage for responsive width, adjust as needed */
   max-width: 500px; /* Maximum width for larger screens */
   padding: 2% 0; /* Uniform padding percentage for top and bottom */
-  background: rgba(255, 255, 255, 0.8); /* Optional: background to make text more readable on busy background image */
+  background: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Optional: background to make text more readable on busy background image */
   border-radius: 10px; /* Uncommented and applied to all rows for consistency */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for 3D effect */
 }

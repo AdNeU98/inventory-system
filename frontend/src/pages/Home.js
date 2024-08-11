@@ -2,7 +2,7 @@ import React from "react";
 import { Card, Col, Container, Row } from "react-bootstrap";
 import "../styles/home.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import ParticlesBg  from "particles-bg"
+import ParticlesBg from "particles-bg";
 import {
   faCoffee,
   faFileInvoiceDollar,
@@ -12,13 +12,14 @@ import {
   faUserTie,
   faAddressCard,
   faEuroSign,
+  faDollarSign,
   faWeight,
   faBalanceScale,
   faWeightHanging,
   faBox,
   faPeopleCarry,
   faMoneyBill,
-  faBookmark
+  faBookmark,
 } from "@fortawesome/free-solid-svg-icons";
 
 import bg from "../assets/back.jpg";
@@ -34,7 +35,6 @@ const DATA = [
     title: "Purchase Orders",
     count: 10,
     icon: faMoneyBill,
-    
   },
   {
     id: 3,
@@ -52,7 +52,7 @@ const DATA = [
     id: 6,
     title: "Total Amount",
     count: 190000,
-    icon: faEuroSign,
+    icon: faDollarSign,
   },
   {
     id: 7,
@@ -65,31 +65,34 @@ const DATA = [
 function Home() {
   return (
     <div>
-        <Container>
-          <Row className="container-main">
-            {DATA.map((item, i) => {
-              let color = "primary";
+      <Container>
+        <Row className="container-main">
+          {DATA.map((item, i) => {
+            let color = "primary";
 
-              if (i === 1 || i === 5) {
-                color = "danger";
-              } else if (i === 2 || i === 6) {
-                color = "info";
-              } else if (i === 3 || i === 7) {
-                color = "success";
-              }
+            if (i === 1 || i === 5) {
+              color = "danger";
+            } else if (i === 2 || i === 6) {
+              color = "info";
+            } else if (i === 3 || i === 7) {
+              color = "success";
+            }
 
-              return (
-                <Col md={4} className="dashboard-cards">
-                  <div className={`card-counter ${color}`} style={{borderRadius:'75%'}}>
-                    <FontAwesomeIcon icon={item.icon} className="card--icon" />
-                    <span className="count-numbers">{item.count}</span>
-                    <span className="count-name">{item.title}</span>
-                  </div>
-                </Col>
-              );
-            })}
-          </Row>
-        </Container>
+            return (
+              <Col md={4} className="dashboard-cards">
+                <div
+                  className={`card-counter ${color}`}
+                  style={{ borderRadius: "75%" }}
+                >
+                  <FontAwesomeIcon icon={item.icon} className="card--icon" />
+                  <span className="count-numbers">{item.count}</span>
+                  <span className="count-name">{item.title}</span>
+                </div>
+              </Col>
+            );
+          })}
+        </Row>
+      </Container>
     </div>
   );
 }
