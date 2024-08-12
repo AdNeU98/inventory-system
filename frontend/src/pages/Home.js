@@ -82,7 +82,7 @@ function Home() {
               <Col md={4} className="dashboard-cards">
                 <div
                   className={`card-counter ${color}`}
-                  style={{ borderRadius: "75%" }}
+                  style={{ borderRadius: "10%" }}
                 >
                   <FontAwesomeIcon icon={item.icon} className="card--icon" />
                   <span className="count-numbers">{item.count}</span>

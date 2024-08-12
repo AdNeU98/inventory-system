@@ -113,12 +113,12 @@ function ManagePurchaseOrder() {
     <Container className="container-main">
       <Row className="container-main">
         <Col>
+          <h3 style={{ fontweight: "bold" }}>Purchase Order</h3>
+        </Col>
+        <Col style={{ display: "flex", justifyContent: "end" }}>
           <Link to="/add-purchase-order">
             <Button variant="dark">Add Purchase Order</Button>
           </Link>
-        </Col>
-        <Col>
-          <h3 style={{ color: '#deb887', fontweight:'bold' }}>Purchase Order</h3>
         </Col>
       </Row>
       <Row>

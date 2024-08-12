@@ -11,31 +11,14 @@ import { useHistory, useLocation } from "react-router-dom";
 import { AuthContext } from "../../context/Auth";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faCoffee,
-  faHome,
-  faThermometer,
-  faUser,
   faUserTie,
   faFileInvoiceDollar,
-  faUserTag,
-  faReceipt,
-  faChartPie,
-  faCartPlus,
-  faCarAlt,
   faCubes,
   faUserFriends,
-  faAddressBook,
   faShoppingCart,
-  faBoxOpen,
-  faPeopleCarry,
-  faFileInvoice,
-  faMoneyBill,
-  faBullseye,
-  faCube,
 } from "@fortawesome/free-solid-svg-icons";
 import displayToast from "../../utils/displayToast";
 import { Button, Navbar, Container } from "react-bootstrap";
-
 
 function Sidenav() {
   const history = useHistory();
@@ -58,40 +41,45 @@ function Sidenav() {
       <React.Fragment>
         <Navbar>
           <Container>
-          <Navbar.Brand
-            href="/"
-            style={{
-              fontFamily: 'Your Custom Font', // Add your custom font-family
-              fontSize: '24px', // Adjust the font size as needed
-              fontWeight: 'bold', // Set the font weight to bold if desired
-              color: '#333', // Set the color as needed
-              // Add any other styling you'd like
-            }}
-          >Inventory Control System</Navbar.Brand>
+            <Navbar.Brand
+              href="/"
+              style={{
+                fontFamily: "Nunito, sans-serif", // Add your custom font-family
+                fontSize: "24px", // Adjust the font size as needed
+                fontWeight: "bold", // Set the font weight to bold if desired
+                color: "#333", // Set the color as needed
+                // Add any other styling you'd like
+              }}
+            >
+              Inventory Control System
+            </Navbar.Brand>
             <Navbar.Collapse className="justify-content-end">
               <Navbar.Text>
                 <FontAwesomeIcon
-                    icon={faUserTie}
-                    style={{
-                      fontSize: '1.5rem', // Larger icon size
-                      marginRight: '8px', // Space between icon and text
-                      verticalAlign: 'middle' // Aligns icon with text
-                    }}
+                  icon={faUserTie}
+                  style={{
+                    fontSize: "1.5rem", // Larger icon size
+                    marginRight: "8px", // Space between icon and text
+                    verticalAlign: "middle", // Aligns icon with text
+                  }}
                 />
-                <span style={{
-                  verticalAlign: 'middle', // Aligns text with icon
-                  fontSize: '1rem', // Font size for the user info, adjust as needed
-                  fontWeight: 'bold', // Optional: if you want the name and designation to be bold
-                  color: '#fff' // Color of the text
-                }}>
-      {userData.fullName} - <b>{userData.designation}</b>
-    </span>
+                <span
+                  style={{
+                    verticalAlign: "middle", // Aligns text with icon
+                    fontSize: "1rem", // Font size for the user info, adjust as needed
+                    fontWeight: "bold", // Optional: if you want the name and designation to be bold
+                    color: "black", // Color of the text
+                  }}
+                >
+                  {userData.fullName} - <b>{userData.designation}</b>
+                </span>
               </Navbar.Text>
-            </Navbar.Collapse>
-
-
-            <Navbar.Collapse className="justify-content-end">
-              <Button variant="outline-dark" className="" onClick={logoutUser}>
+              <Button
+                variant="outline-dark"
+                style={{ borderColor: "red", color: "red", marginLeft: "10px" }}
+                className=""
+                onClick={logoutUser}
+              >
                 Logout
               </Button>
             </Navbar.Collapse>
@@ -161,7 +149,10 @@ function Sidenav() {
 
             <NavItem eventKey="manage-invoice">
               <NavIcon>
-                <FontAwesomeIcon icon={faFileInvoiceDollar} className="side-nav-icons" />
+                <FontAwesomeIcon
+                  icon={faFileInvoiceDollar}
+                  className="side-nav-icons"
+                />
                 {/* <i className="fa fa-fw fa-device" style={{ fontSize: '1.75em' }} /> */}
               </NavIcon>
               <NavText>View Invoice</NavText>

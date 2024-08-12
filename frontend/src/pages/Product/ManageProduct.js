@@ -68,18 +68,17 @@ function ManageProduct() {
 
   return (
     <Container className="container-main">
-    <Row className="header-row">
-      <Col md={6}>
-        <h3>Product List</h3>
-      </Col>
-      <Col md={6} className="add-product-col">
-        <Link to="/add-product">
-          <Button variant="primary" className="add-product-button">
-            Add New Product
-          </Button>
-        </Link>
+      <Row className="header-row">
+        <Col md={6}>
+          <h3 style={{ color: "black" }}>Product List</h3>
         </Col>
-        
+        <Col md={6} className="add-product-col">
+          <Link to="/add-product">
+            <Button variant="primary" className="add-product-button">
+              Add New Product
+            </Button>
+          </Link>
+        </Col>
       </Row>
       <Row>
         <Table striped bordered hover>
@@ -105,15 +104,17 @@ function ManageProduct() {
                     <td>{price}</td>
                     <td>{quantity}</td>
                     <td>
-                      <Link to={`/edit-product/?id=${id}`}>
-                        <Button variant="secondary">Edit</Button>{" "}
-                      </Link>
-                      <Button
-                        onClick={() => deleteProductConfirmation(product)}
-                        variant="danger"
-                      >
-                        Delete
-                      </Button>
+                      <div style={{ display: "flex", flexDirection: "row" }}>
+                        <Link to={`/edit-product/?id=${id}`}>
+                          <Button variant="secondary">Edit</Button>{" "}
+                        </Link>
+                        <Button
+                          onClick={() => deleteProductConfirmation(product)}
+                          variant="danger"
+                        >
+                          Delete
+                        </Button>
+                      </div>
                     </td>
                   </tr>
                 );
