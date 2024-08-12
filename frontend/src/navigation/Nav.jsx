@@ -93,7 +93,7 @@ function Nav() {
             />
 
             <RouteWrapper path="/home" exact component={Home} />
-            <RouteWrapper path="/" exact component={Home} />
+            <RouteWrapper path="/" exact component={ManageProduct} />
           </React.Fragment>
         ) : (
           <RouteWrapper path="/" exact component={Login} />

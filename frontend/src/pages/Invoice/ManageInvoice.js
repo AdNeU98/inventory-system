@@ -37,7 +37,7 @@ function ManageInvoice() {
     <Container className="container-main">
       <Row className="container-main">
         <Col>
-          <h3 style={{ color: '#deb887', fontweight:'bold' }}>Buyers Invoices</h3>
+          <h3 style={{ fontweight: "bold" }}>Buyers Invoices</h3>
         </Col>
       </Row>
       <Row>

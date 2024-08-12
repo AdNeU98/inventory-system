@@ -70,12 +70,21 @@ function ManageBuyer() {
     <Container className="container-main">
       <Row className="container-main">
         <Col>
-          <Link to="/add-buyer">
-            <Button variant="dark" size="lg">Add New Buyer</Button>
-          </Link>
+          <h3 style={{ fontweight: "bold" }}>Buyer</h3>
         </Col>
         <Col>
-          <h3 style={{ color: 'teal', fontweight:'bold'  }}>Buyer</h3>
+          <div
+            style={{
+              marginLeft: "auto",
+              marginRight: 0,
+              display: "flex",
+              justifyContent: "end",
+            }}
+          >
+            <Link to="/add-buyer">
+              <Button variant="dark">Add New Buyer</Button>
+            </Link>
+          </div>
         </Col>
       </Row>
       <Row>
@@ -102,15 +111,17 @@ function ManageBuyer() {
                     <td>{companyName}</td>
                     <td>{zipcode}</td>
                     <td>
-                      <Link to={`/edit-buyer/?id=${id}`}>
-                        <Button variant="secondary">Edit</Button>{" "}
-                      </Link>
-                      <Button
-                        onClick={() => deleteBuyerConfirmation(buyer)}
-                        variant="danger"
-                      >
-                        Delete
-                      </Button>
+                      <div style={{ display: "flex", flexDirection: "row" }}>
+                        <Link to={`/edit-buyer/?id=${id}`}>
+                          <Button variant="secondary">Edit</Button>{" "}
+                        </Link>
+                        <Button
+                          onClick={() => deleteBuyerConfirmation(buyer)}
+                          variant="danger"
+                        >
+                          Delete
+                        </Button>
+                      </div>
                     </td>
                   </tr>
                 );
