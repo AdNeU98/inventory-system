@@ -20,17 +20,17 @@ public class UDPFacade {
 
         DatagramPacket dpPacket;
         boolean run = true;
-        System.out.println("***** Server Listening on Port ***********");
+//        System.out.println("***** Server Listening on Port ***********");
         while (run) {
             dpPacket = new DatagramPacket(recieve, recieve.length);
 
             ds.receive(dpPacket);
 
-            System.out.print("\n***** Data sent by Client *****\n" + data(recieve));
+//            System.out.print("\n***** Data sent by Client *****\n" + data(recieve));
             System.out.println();
 
             if (data(recieve).toString().equalsIgnoreCase("stop")) {
-                System.out.println("Exiting");
+//                System.out.println("Exiting");
                 run = false;
             }
             recieve = new byte[10000];

@@ -18,6 +18,13 @@ public class PDFGen extends Facade{
 		pdf.generatePDF(insertedInvoice.get());
 	}
 
+	/**
+	 *
+	 * @param invoiceID
+	 * @param invoiceRepo
+	 *
+	 * Client should not worry about internal logic and just call this facade function
+	 */
 	public static void pdfGenerator(int invoiceID, InvoiceRepository invoiceRepo) {
 		new PDFGen().pdfGen(invoiceID, invoiceRepo);
 	}

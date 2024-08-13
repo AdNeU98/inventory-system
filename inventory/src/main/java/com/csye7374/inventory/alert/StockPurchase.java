@@ -14,8 +14,8 @@ public class StockPurchase implements StateAPI {
 
     @Override
     public void increaseStock(int stock) {
-        this.product.setQuantity(product.getQuantity() + stock);
         this.productRepo.save(this.product);
+        System.out.println("Order purchase successful ");
     }
 
     @Override

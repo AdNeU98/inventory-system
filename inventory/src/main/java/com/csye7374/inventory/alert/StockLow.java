@@ -20,7 +20,7 @@ public class StockLow implements StateAPI {
 
     @Override
     public void alertStock(int stock) {
-        SendMessage.message("\n******\nLOW STOCK for " + this.product.getProductName() + "\n*****\n");
+        System.out.println("\n******\nLOW STOCK for " + this.product.getProductName() + "\n*****\n");
     }
 }
 
