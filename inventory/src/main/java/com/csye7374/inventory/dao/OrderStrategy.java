@@ -44,7 +44,7 @@ public class OrderStrategy implements StrategyAPI {
                 return 0;
             }
         };
-        System.out.println("Inserted " + this.insertedPO.getId());
+        System.out.println("Inserted Product Order ID " + this.insertedPO.getId());
         List<ProductPO> productPOs = this.insertedPO.getProducts();
         Iterator var4 = productPOs.iterator();
 
