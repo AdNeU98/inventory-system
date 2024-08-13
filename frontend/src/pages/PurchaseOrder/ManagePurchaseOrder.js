@@ -126,13 +126,13 @@ function ManagePurchaseOrder() {
           <div id="customers">
             <thead>
               <tr>
-                <th>Sr. No.</th>
-                <th>Company Name</th>
-                <th>Total Products</th>
-                <th>Total Price</th>
-                <th>Payment Date</th>
-                <th>Status</th>
-                <th>Action</th>
+                <th style={{ width: "5%" }}>Sr. No.</th>
+                <th style={{ width: "10%" }}>Company Name</th>
+                <th style={{ width: "5%" }}>Total Products</th>
+                <th style={{ width: "10%" }}>Total Price</th>
+                <th style={{ width: "10%" }}>Payment Date</th>
+                <th style={{ width: "5%" }}>Status</th>
+                <th style={{ width: "15%" }}>Action</th>
               </tr>
             </thead>
 
